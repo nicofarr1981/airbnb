@@ -18,7 +18,7 @@
 
 SELECT l.property_type, count(*) as nbr_of_reviews, max(r.date_reviewed)
 from listings l,
- reviews r
+ reviews r 
 where 
 l.id = r.listing_id
 group by l.property_type
